@@ -1,0 +1,53 @@
+{
+  "name": "proyecto1_self",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/molinajimenez/web_proyecto1.git"
+  },
+  "keywords": [],
+  "author": "Francisco Molina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/molinajimenez/web_proyecto1/issues"
+  },
+  "homepage": "https://github.com/molinajimenez/web_proyecto1#readme",
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^3.2.0",
+    "cssnano": "^4.1.10",
+    "eslint": "^6.4.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-standard": "^4.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "postcss-loader": "^3.0.0",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1"
+  },
+  "postcss": {
+    "parser": "sugarss",
+    "map": false,
+    "plugin": {
+      "postcss-plugin": {}
+    }
+  }
+}
