@@ -17,17 +17,23 @@ module.exports = {
                 }
             },
             {
-                test: /\.(sa|sc|c)ss$/,
+                test: /\.css$/,
                 exclude: /node_modules/,
-                use: [{
-                    loader: 'css-loader',
+                use: ['style-loader','css-loader']
+            },
 
-                },{
-                    loader: 'postcss-loader'
-                }
-
+            {
+                test: /\.(woff?|ttf|eot|svg|otf)(\?v=\d+\.\d+\.\d+)?$/,
+                use: [
+                    {
+                        loader: 'file-loader?name=/fonts/[name].[ext]',
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: 'fonts/'
+                        }
+                    }
                 ]
-            }
+            },
         ]
     },
     plugins: [
