@@ -5,10 +5,16 @@ import '../css/mainStyle.css'
 class App extends Component{
 
     render(){
-       return <div>
-            <NavBar></NavBar>
-            <HeaderContent></HeaderContent>
-        </div>
+       return(
+        <header className="mainHeader">
+            <div className="outerContainer">
+                <NavBar></NavBar>
+                <HeaderContent></HeaderContent>
+            </div>
+            
+        </header>
+
+       );
     }
 }
 

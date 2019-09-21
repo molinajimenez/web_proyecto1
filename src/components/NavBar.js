@@ -38,35 +38,30 @@ export class NavBar extends React.Component{
     }
     
     render(){
-        return(
-            <header className="so-ele home">
-                <div className="top-menu" id="header">
-                    <div className="container" onScroll={this.handleScroll}>
-                        <nav className="menu">
-                            <ul className="main-menu" role="navigation">
-                                <li>
-                                    <a href="/#" className="underlinable">Work</a>
-                                </li>
-                                <li>
-                                    <a href="/#" className="underlinable">About</a>
-                                </li>
-                                <li>
-                                    <a href="/#" className="underlinable">News</a>
-                                </li>
-                                <li>
-                                    <a href="/#" className="underlinable">Careers</a>
-                                </li>
-                                <li>
-                                    <a href="www.google.com" title="Contact" className="contact">Contact</a>
-                                </li>
-                            </ul>
-
-                        </nav>
-                    </div>
+        return(    
+            <div className="top-menu" id="header">
+                <div className="container" onScroll={this.handleScroll}>
+                    <nav className="menu">
+                        <ul className="main-menu" role="navigation">
+                            <li>
+                                <a href="/#" className="underlinable">Work</a>
+                            </li>
+                            <li>
+                                <a href="/#" className="underlinable">About</a>
+                            </li>
+                            <li>
+                                <a href="/#" className="underlinable">News</a>
+                            </li>
+                            <li>
+                                <a href="/#" className="underlinable">Careers</a>
+                            </li>
+                            <li>
+                                <a href="www.google.com" title="Contact" className="contact">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-
-            </header>
-            
+            </div>
         );
     }
 }
