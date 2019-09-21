@@ -1,0 +1,17 @@
+.headerContent{
+    z-index: 1;
+    display: block;
+    width: 100%;
+    position: relative;
+    padding: 43px 0;
+}
+
+.mission-statement{
+    font-size: 2.38em;
+    margin-top: 72px;
+    color: black;
+    max-width: 720px;
+    line-height: 1.18;
+    font-weight: bold;
+    margin: 32px 0 0 0;
+}

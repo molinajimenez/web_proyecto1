@@ -24,6 +24,8 @@ header .top-menu{
     overflow: hidden;
     background-color:rgba(255,255,255,0);
     transition: background-color 240ms cubic-bezier(0.39, 0.575, 0.565, 1), transform 240ms cubic-bezier(0.39, 0.575, 0.565, 1), box-shadow 180ms linear, -webkit-transform 240ms cubic-bezier(0.39, 0.575, 0.565, 1), -webkit-box-shadow 180ms linear;
+    box-shadow: rgba(0,0,0,0.12);
+    background-color: white;
 }
 *, :after :before{
     box-sizing: border-box;
@@ -103,13 +105,13 @@ header nav.menu ul li a{
     opacity: 1;
     transition-property: opacity;
     transition-duration: 260ms;
-    transition-timing-function: cubic-bezier(0.245, 0.655, 0.3, 1);
+    transition-timing-function: ease-in-out
 }
 
 a, a:hover, a:link, a:visited{
     text-decoration: none;
 }
-header nav.menu ul li a:after{
+header nav.menu ul li a.underlinable:after{
     content: '';
     position: absolute;
     bottom: 0;
@@ -123,7 +125,12 @@ header nav.menu ul li a:after{
     backface-visibility: hidden;
     transition-property: transform, -webkit-transform;
     transition-duration: 260ms;
-    transition-timing-function: cubic-bezier(0.245, 0.655, 0.3, 1)
+    transition-timing-function: ease-in-out
+}
+
+header nav.menu ul li a.underlinable:hover::after{
+    transform: scaleX(1);
+    transform-origin:bottom left; 
 }
 
 header nav.menu ul li a.contact{
@@ -132,9 +139,14 @@ header nav.menu ul li a.contact{
     margin-left: 4px;
     padding: 8px 20px;
     opacity: 1;
-    transition: background-color 260ms cubic-bezier(0.245, 0.655, 0.3, 1), color 260ms cubic-bezier(0.245, 0.655, 0.3, 1), text-shadow 260ms cubic-bezier(0.245, 0.655, 0.3, 1)
+    transition-property: color; 
+    transition-duration: 480ms;
+    transition-timing-function: cubic-bezier(0.245, 0.655, 0.3, 1);
 }
 
-header nav.menu ul li a.contact:after{
-    display: none;
+header nav.menu ul li a.contact:hover{
+    background-color: #2480FF;
+    color: white;
+    
+    
 }
