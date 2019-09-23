@@ -18,12 +18,11 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                exclude: /node_modules/,
                 use: ['style-loader','postcss-loader']
             },
 
             {
-                test: /\.(woff?|ttf|eot|svg|otf)(\?v=\d+\.\d+\.\d+)?$/,
+                test: /\.(woff|ttf|eot|svg|otf)(\?v=\d+\.\d+\.\d+)?$/,
                 use: [
                     {
                         loader: 'file-loader?name=/fonts/[name].[ext]',

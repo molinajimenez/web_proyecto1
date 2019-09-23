@@ -20,7 +20,8 @@
   "homepage": "https://github.com/molinajimenez/web_proyecto1#readme",
   "dependencies": {
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "react-ionicons": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^9.6.1",
@@ -41,6 +42,7 @@
     "html-webpack-plugin": "^3.2.0",
     "postcss-loader": "^3.0.0",
     "postcss-safe-parser": "^4.0.1",
+    "splitting": "^1.0.6",
     "style-loader": "^1.0.0",
     "url-loader": "^2.1.0",
     "webpack": "^4.40.2",

@@ -1,0 +1,21 @@
+
+a.animated {
+    animation: slide-in 0.45s cubic-bezier(.5, 0, .5, 1) both;
+    animation-delay: calc(30ms * var(--word-index) *4);
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translateY(1em);
+      opacity: 1;
+    }
+  }
+
+a.animated:after{
+    font-size: 1.24em;
+    position: relative;
+    left: 34px;
+    line-height: 42px;
+    border-radius: 50%;
+    text-align: center;
+}
