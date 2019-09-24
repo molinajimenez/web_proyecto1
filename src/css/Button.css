@@ -1,7 +1,14 @@
+@font-face {
+  font-family: 'ionicons';
+  src:
+       url('../fonts/ionicons.woff') format('woff');
+  font-weight: normal;
+}
 
-a.animated {
-    animation: slide-in 0.45s cubic-bezier(.5, 0, .5, 1) both;
-    animation-delay: calc(30ms * var(--word-index) *4);
+
+a.animated:hover{
+    animation: slide-in 0.35s cubic-bezier(0.245, 0.655, 0.3, 1) forwards;
+    animation-delay: calc(85ms * var(--word-index) *4);
   }
   
   @keyframes slide-in {
@@ -12,10 +19,17 @@ a.animated {
   }
 
 a.animated:after{
-    font-size: 1.24em;
-    position: relative;
-    left: 34px;
-    line-height: 42px;
-    border-radius: 50%;
-    text-align: center;
+  font-family: ionicons;
+  content: '\f10b';
+  font-size: 1.68em;
+  position: relative;
+  overflow-wrap: normal;
+  padding: 10% 15%;
+  bottom: 50%;
+  left: 104%;
+  line-height: 42px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #2480FF;
+  color: white;
 }

@@ -22,7 +22,7 @@ module.exports = {
             },
 
             {
-                test: /\.(woff|ttf|eot|svg|otf)(\?v=\d+\.\d+\.\d+)?$/,
+                test: /\.(woff|ttf|eot|svg|otf)?$/,
                 use: [
                     {
                         loader: 'file-loader?name=/fonts/[name].[ext]',
@@ -39,5 +39,9 @@ module.exports = {
         new HtmlWebpack({
             template: './src/index.html'
         })
-    ]
+    ],
+
+    devServer: {
+        contentBase: path.join(__dirname, 'src')
+      }
 }
