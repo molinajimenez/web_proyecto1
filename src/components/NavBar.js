@@ -4,8 +4,8 @@ export class NavBar extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            direction: '',
-            lastScroll:0
+            show: true,
+            scrollPos: 0
         };
 
         this.handleScroll = this.handleScroll.bind(this);
@@ -13,33 +13,26 @@ export class NavBar extends React.Component{
 
     
 
-    handleScroll(event){
-        if(this.state.lastScroll > event.currentTarget.scrollTop){
-            this.setState({
-                direction: 'top',
-                lastScroll: event.currentTarget.scrollTop
-            });
-        } else if(this.state.lastScroll < event.currentTarget.scrollTop){
-            this.setState({
-                direction: 'down',
-                lastScroll: event.currentTarget.scrollTop
-            });
-        }
-
-        this.checkStatus(this.state.direction)
+    handleScroll(){
+        const { scrollPos } = this.state;
+        this.setState({
+            scrollPos: document.body.getBoundingClientRect().top,
+            show: document.body.getBoundingClientRect().top > scrollPos
+        });
     }
 
-    checkStatus(currentPos){
-        if (currentPos == 'top'){
-            console.log("nothing to do.")
-        } else{
-            console.log('add shadow')
-        }
-    }
+
+    componentDidMount() {
+        window.addEventListener("scroll", this.handleScroll);
+      }
+      
+      componentWillUnmount() {
+        window.removeEventListener("scroll", this.handleScroll);
+      }
     
     render(){
         return(    
-            <div className="top-menu" id="header">
+            <div className={this.state.show ? "top-menuActive": "top-menuHide"} id="header">
                 <div className="container" onScroll={this.handleScroll}>
                     <nav className="menu">
                         <ul className="main-menu" role="navigation">
