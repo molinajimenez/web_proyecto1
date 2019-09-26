@@ -8,6 +8,7 @@ class App extends Component{
        return(
         <header className="mainHeader">
             <div className="outerContainer">
+                
                 <NavBar></NavBar>
                 <HeaderContent></HeaderContent>
             </div>

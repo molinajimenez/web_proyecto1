@@ -22,7 +22,7 @@ module.exports = {
             },
 
             {
-                test: /\.(woff|ttf|eot|svg|otf)?$/,
+                test: /\.(woff(2)?|ttf|eot|svg|otf)?$/,
                 use: [
                     {
                         loader: 'file-loader?name=/fonts/[name].[ext]',

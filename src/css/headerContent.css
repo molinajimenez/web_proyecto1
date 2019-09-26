@@ -31,3 +31,35 @@
     margin-left: 8.5%;
     margin-top: 9%;
 }
+
+.marquee{
+    width: 100%;
+    margin: 0 0;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-size: 18.91em;
+    font-weight: 800;
+    position: absolute;
+    top: 0.5vh;
+    z-index: -1;
+}
+
+.marquee span {
+    display: inline-block;
+    z-index: -1;
+    color:#F6F7F8;
+    padding-left: 100%;
+    /* show the marquee just outside the paragraph */
+    animation: marquee 26s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
+  

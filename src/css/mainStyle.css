@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'Circular-Std Font';
+    font-family: 'Circular';
     src:
-         url('../fonts/Circular Std Font.otf') format('otf');
+         url('../fonts/Circular-Book.woff2') format('woff2');
     font-weight: normal;
 }
 
 body{
-    font-family: 'Circular-Std Font', Arial, Helvetica, monospace;
+    font-family: 'Circular', Helvetica, monospace;
     width: 100%;
     max-width: 100%;
     height: 100%;
@@ -34,4 +34,7 @@ body{
 
 header.mainHeader{
     height: calc(100vh - 68px);
+    width: 100%;
 }
+
+
