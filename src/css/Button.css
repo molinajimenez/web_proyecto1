@@ -5,18 +5,9 @@
   font-weight: normal;
 }
 
-
-a.animated:hover{
-    animation: slide-in 0.35s cubic-bezier(0.245, 0.655, 0.3, 1) forwards;
-    animation-delay: calc(85ms * var(--word-index) *4);
-  }
-  
-  @keyframes slide-in {
-    from {
-      transform: translateY(1em);
-      opacity: 1;
-    }
-  }
+a.animated{
+  font-weight: 1000;
+}
 
 a.animated:before{
   content: '';
@@ -28,8 +19,8 @@ a.animated:before{
   border-radius: 50%;
   opacity: 0.5;
   background-color: #0DD9F0;
-
 }
+
 a.animated:after{
   font-family: ionicons;
   content: '\f10b';
@@ -45,3 +36,37 @@ a.animated:after{
   background-color: #2480FF;
   color: white;
 }
+
+
+/* animaciones 
+.animated .word {
+  overflow: hidden;
+  color: transparent;
+}
+.animated .words:before, .animated .words:after {
+  visibility: visible;
+  color: red;
+  transition: transform 0.5s cubic-bezier(0.9,0,.2,1);
+  transition-delay: calc( 0.2s + ( 0.02s * ( var(--word-index)) ) )
+}
+.animated .words:before{
+  color: #00C9B1;
+  transition-delay: calc(0.02s * var(--word-index));
+}
+.animated:hover .words:before {
+  transition-delay: calc( 0.2s + ( 0.02s * ( var(--word-index)) ) )
+}
+.animated:hover .words:after {
+  transition-delay: calc(0.02s * var(--word-index));
+}
+.animated .words:before {
+  transform: translateY(-100%);
+}
+.animated:hover .words:before {
+  transform: translateY(0%);
+}
+.animated:hover .words:after {
+  transform: translateY(100%);
+}
+
+*/

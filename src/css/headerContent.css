@@ -33,16 +33,17 @@
 }
 
 .marquee{
-    width: 100%;
     margin: 0 0;
     white-space: nowrap;
     overflow: hidden;
     box-sizing: border-box;
-    font-size: 18.91em;
+    font-size: 17em;
     font-weight: 800;
     position: absolute;
-    top: 0.5vh;
+    top: 0.2vh;
     z-index: -1;
+    user-select: none; 
+    width:  100vw;
 }
 
 .marquee span {
