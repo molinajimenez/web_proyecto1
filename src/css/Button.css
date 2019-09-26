@@ -35,6 +35,12 @@ a.animated:after{
   text-align: center;
   background-color: #2480FF;
   color: white;
+  transform: scale(1); 
+  transition: 0.15s all ease;
+}
+
+a.animated:hover:after{
+  transform: scale(1.2);
 }
 
 

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import NavBar from './NavBar.js';
 import HeaderContent from './HeaderContent';
+import VideoFrame from './VideoFrame';
 import '../css/mainStyle.css'
 class App extends Component{
 
@@ -12,8 +13,10 @@ class App extends Component{
                 <NavBar></NavBar>
                 <HeaderContent></HeaderContent>
             </div>
-            
+            <VideoFrame></VideoFrame>
         </header>
+        
+        
 
        );
     }

@@ -1,0 +1,37 @@
+section.firstArt{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    padding: calc(32px * 4) 0;
+    background-color: white; 
+}
+
+.container-video-Upper{
+    position: relative;
+    padding: 0 32px;
+    max-width: 1236px;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.videoContainer{
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+
+iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
