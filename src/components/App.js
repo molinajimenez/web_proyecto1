@@ -1,23 +1,17 @@
 import React, {Component} from 'react';
-import NavBar from './NavBar.js';
-import HeaderContent from './HeaderContent';
+import Header from './Header';
 import VideoFrame from './VideoFrame';
-import '../css/mainStyle.css'
+import Article from './Article';
+
 class App extends Component{
 
     render(){
        return(
-        <header className="mainHeader">
-            <div className="outerContainer">
-                
-                <NavBar></NavBar>
-                <HeaderContent></HeaderContent>
+            <div>
+                <Header></Header>
+                <VideoFrame></VideoFrame>
+                <Article firstTag="Selected projects" secondTag="Good fun, great work" thirdTag="LOVESPACE" fourthTag="Improving the UX for 50,000 customers a year"></Article>
             </div>
-            <VideoFrame></VideoFrame>
-        </header>
-        
-        
-
        );
     }
 }

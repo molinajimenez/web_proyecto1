@@ -1,0 +1,81 @@
+.headerArt1{
+    display: block;
+    margin: 0 0;
+}
+
+.subtitle{
+    color: #838D9A;
+    margin-top: 6px;
+    font-size: 1.48em;
+    line-height: 1.36;
+}
+
+.mainTitle{
+    color: black;
+    font-size: 1.62em;
+    margin: 0 0;
+    line-height: 1.36;
+}
+
+ul.items{
+    margin: calc(32px * 2) auto 0 auto;
+    display: block;
+    width: 100%;
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.items li:first-child{
+    margin-top: 0;
+}
+
+ul.items li{
+    margin: calc(32 * 2) auto;
+    display: block;
+    position: relative;
+}
+
+.work-item{
+    background-color: #4cbbb6;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 64px;
+}
+
+.image{
+    align-self: flex-end;
+    max-width: 740px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+.wrapper-item{
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: calc(32px * 2) 32px 0 32px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 551.82px;
+}
+
+.info{
+    display: block;
+    margin: 0 0;
+    padding: 32px 0;
+}
+
+.buttonHolder{
+    text-align: right;
+    position: relative;
+    margin: 0 0;
+}

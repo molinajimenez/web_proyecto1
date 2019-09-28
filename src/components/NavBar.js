@@ -16,8 +16,8 @@ export class NavBar extends React.Component{
     handleScroll(){
         const { scrollPos } = this.state;
         this.setState({
-            scrollPos: document.body.getBoundingClientRect().top,
-            show: document.body.getBoundingClientRect().top > scrollPos
+            // scrollPos: document.body.getBoundingClientRect().top,
+            show: document.body.getBoundingClientRect().top > -400
         });
     }
 
@@ -32,8 +32,11 @@ export class NavBar extends React.Component{
     
     render(){
         return(    
-            <div className={this.state.show ? "top-menuActive": "top-menuHide"} id="header">
+            <div className={this.state.show ? "top-menu top-menuActive": "top-menu top-menuHide"} id="header">
+                <div className="svgTest"></div>
+                
                 <div className="container" onScroll={this.handleScroll}>
+                    
                     <nav className="menu">
                         <ul className="main-menu" role="navigation">
                             <li>

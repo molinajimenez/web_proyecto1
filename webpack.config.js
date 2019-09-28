@@ -33,6 +33,26 @@ module.exports = {
                     }
                 ]
             },
+            {
+                test: /\.svg$/,
+                use:{
+                    loader:'svg-url-loader',
+                    options:{}
+                }
+            },
+            {
+                test: /\.(gif|png|jpe?g)$/i,
+                use: [
+                    'file-loader',
+                    {
+                      loader: 'image-webpack-loader',
+                      options: {
+                        
+                        disable: true, // webpack@2.x and newer
+                      },
+                    },
+                  ],
+            }
         ]
     },
     plugins: [
