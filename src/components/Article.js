@@ -24,14 +24,18 @@ class Article extends Component{
 
                                 </div>
                             </a>
-                            <div className="info">
-                                <h3 className="mainTitle">{this.props.thirdTag}</h3>
-                                <h4 className="subtitle">{this.props.fourthTag}</h4>
-                            </div>
 
-                            <div className="buttonHolder">
-                                
+                            <div className="inGrid">
+                                <div className="info">
+                                    <h3 className="mainTitle">{this.props.thirdTag}</h3>
+                                    <h4 className="subtitle">{this.props.fourthTag}</h4>
+                                </div>
+
+                                <div className="buttonHolder">
+                                    <CoolButton class="animated" text='Read more'></CoolButton>
+                                </div>    
                             </div>
+                            
                         </li>
                     </ul>
                 </div>

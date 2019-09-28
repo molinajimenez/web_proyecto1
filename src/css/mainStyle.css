@@ -37,4 +37,9 @@ header.mainHeader{
     width: 100%;
 }
 
-
+a:-webkit-any-link:active {
+    color: rgba(20,20,20, 0.64);
+}
+a:-webkit-any-link {
+    color: inherit;
+}

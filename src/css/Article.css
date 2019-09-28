@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Circular-Book';
+    src:
+         url('../fonts/Circular-Book.woff2') format('woff2');
+    font-weight: normal;
+  }
+
+
 .headerArt1{
     display: block;
     margin: 0 0;
@@ -78,4 +86,22 @@ ul.items li{
     text-align: right;
     position: relative;
     margin: 0 0;
+    margin-top: 35%;
+}
+
+.buttonHolder .buttonContainer a.animated:after{
+    left: 65%;
+    font-size: 1.08em;
+    font-weight: 400;
+}
+
+.buttonHolder .buttonContainer a.animated{
+    font-family: Circular-Book, monospace;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.inGrid{
+    display: grid;
+    grid-template-columns: 0.94fr auto;
 }

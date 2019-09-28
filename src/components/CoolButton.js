@@ -18,7 +18,10 @@ class CoolButton extends Component{
     render(){
         
         return(
-            <a className={this.props.class} href="/#" data-splitting="words">{this.props.text}</a>
+            <div className="buttonContainer">
+                <a className={this.props.class} href="/#" data-splitting="words">{this.props.text}</a>
+            </div>
+            
         );
     }
 }

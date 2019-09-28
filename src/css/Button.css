@@ -43,6 +43,13 @@ a.animated:hover:after{
   transform: scale(1.2);
 }
 
+.buttonContainer{
+  width: auto;
+  max-width: 120px;
+  display: flex;
+  height: auto;
+}
+
 
 /* animaciones 
 .animated .word {
