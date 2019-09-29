@@ -28,6 +28,7 @@ class Clients extends Component{
                                     <div className="testimonioImagen">
                                         <img className="personaTestimonio" src="../img/steve-folwell-lovespace.jpg"></img>
                                     </div>
+                                    <p className="identity">Steve Folwell, CEO of LOVESPACE</p>
                                 </div>
                             </blockquote>
                         </div>

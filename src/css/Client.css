@@ -76,11 +76,34 @@ section.testimonial.titleContainer{
 
 }
 
-.personaTestimonio{
+.testimonioImagen{
     width: 94px;
     height: 94px;
     border-radius: 47px;
     position: relative;
-    left: 6%;
+    overflow: hidden;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.12);
+    margin-right: 32px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.personaTestimonio{
+    width: 94px;
+    height: 94px;
+    border-radius: 47px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
     transform: translate(-50%, -50%);
+}
+
+.identity{
+    font-weight: 600;
+    margin: 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    font-size: 18.88px;
 }
