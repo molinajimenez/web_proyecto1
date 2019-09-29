@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Header from './Header';
 import VideoFrame from './VideoFrame';
 import Article from './Article';
-
+import Clients from './Clients';
 class App extends Component{
 
     render(){
@@ -14,6 +14,7 @@ class App extends Component{
                 "Improving the UX for 50,000 customers a year", 
                 "Leveling the playing field with a new brand, website and app",
                 "Putting renting in motion"]} colors={["#4CBBB6", "#FFE18B","#46C4F3"]}></Article>
+                <Clients></Clients>
             </div>
        );
     }
