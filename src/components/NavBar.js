@@ -33,7 +33,7 @@ export class NavBar extends React.Component{
     render(){
         return(    
             <div className={this.state.show ? "top-menu top-menuActive": "top-menu top-menuHide"} id="header">
-                <div className="svgTest"></div>
+                <img src={require("../img/vectorpaint.svg")} className="logoHaioTop"></img>
                 
                 <div className="container" onScroll={this.handleScroll}>
                     

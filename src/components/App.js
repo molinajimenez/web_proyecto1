@@ -4,6 +4,7 @@ import VideoFrame from './VideoFrame';
 import Article from './Article';
 import Clients from './Clients';
 import ContactArticle from './ContactArticle';
+import Footer from './Footer';
 class App extends Component{
 
     render(){
@@ -17,7 +18,7 @@ class App extends Component{
                 "Putting renting in motion"]} colors={["#4CBBB6", "#FFE18B","#46C4F3"]}></Article>
                 <Clients></Clients>
                 <ContactArticle titles={["Want to work together?"]} subtitles={["Drop by, pop up or give us a buzz"]}></ContactArticle>
-
+                <Footer></Footer>
             </div>
        );
     }

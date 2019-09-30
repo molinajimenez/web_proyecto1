@@ -22,7 +22,7 @@ module.exports = {
             },
 
             {
-                test: /\.(woff(2)?|ttf|eot|svg|otf)?$/,
+                test: /\.(woff(2)?|ttf|eot|otf)?$/,
                 use: [
                     {
                         loader: 'file-loader?name=/fonts/[name].[ext]',
@@ -34,14 +34,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.svg$/,
-                use:{
-                    loader:'svg-url-loader',
-                    options:{}
-                }
-            },
-            {
-                test: /\.(gif|png|jpe?g)$/i,
+                test: /\.(gif|png|svg|jpe?g)$/i,
                 use: [
                     'file-loader',
                     {

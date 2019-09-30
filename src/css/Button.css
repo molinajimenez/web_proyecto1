@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'ionicons';
   src:
-       url('../fonts/ionicons.woff') format('woff');
+       url('./fonts/ionicons.woff') format('woff');
   font-weight: normal;
 }
 

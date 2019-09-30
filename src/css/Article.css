@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Circular-Book';
     src:
-         url('../fonts/Circular-Book.woff2') format('woff2');
+         url('./fonts/Circular-Book.woff2') format('woff2');
     font-weight: normal;
   }
 

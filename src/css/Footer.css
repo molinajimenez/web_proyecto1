@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'ionicons';
+    src:
+         url('./fonts/ionicons.woff') format('woff');
+    font-weight: normal;
+  }
+.endContainer{
+    display: grid;
+    grid-template-columns: auto auto auto auto; 
+    column-gap: 2%;
+}
+
+.endContainer > div{
+    width: fit-content;
+}
+
+hr{
+    margin: 0 0 calc(32px * 2) 0;
+    display: block;
+    border: none;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #F6F7F8;
+}
+
+img.logoHaio{
+    width: 82px;
+    height: 28px;
+}
+
+nav.footer-menu{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+}
+
+nav.footer-menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    height: 200px;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    list-style-type: none; 
+}
+nav.footer-menu ul li{
+    display: block;
+    line-height: 1;
+    margin: 6px 0;
+    list-style: none;
+    list-style-type: none; 
+}
+
+nav.footer-menu ul li a{
+    display: inline-block;
+    padding: 3px 0;
+    font-size: 1.18em; 
+    color: black;
+    transition: color 240ms ease-in-out;
+}
+nav.footer-menu ul li a:hover{
+    color: #2480FF;
+}
+
+.social-links{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    list-style-type: none;
+    list-style: none;
+    text-align: right;
+}
+
+.social-links li{
+    display: inline-block;
+    margin: 0 12px;
+}
+.social-links li a{
+    color: black;
+    font-size: 1.88em; 
+}
+
+.facebook{
+    font-family: ionicons;
+    content: "\f236";
+}
+
+.social-links li:first-child{
+    margin-left: 0; 
+}
+
+.social-links li a > img{
+    width: 32px;
+    height: 32px;
+    transition: filter 340ms ease-in-out;
+}
+
+.social-links li a > img:hover{
+    filter: invert(15%) sepia(97%) saturate(5842%) hue-rotate(245deg) brightness(96%) contrast(112%);
+
+}
+
+nav.footer-menu ul li a.gray{
+    color: #838D9A;
+    transition: color 300ms ease-in-out;
+}
+nav.footer-menu ul li a.gray:hover{
+    color: #2480FF;
+}

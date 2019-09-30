@@ -15,7 +15,7 @@ class Clients extends Component{
                     <div className="fadeinUp">
                         <div className="imageContainer">
                             
-                            <img src="../img/quote.svg" className="quoteImg"></img>
+                            <img src={require("../img/quote.svg")} className="quoteImg"></img>
                                 
                         </div>
 
@@ -26,7 +26,7 @@ class Clients extends Component{
                                 </p>
                                 <div className="testimonioPor">
                                     <div className="testimonioImagen">
-                                        <img className="personaTestimonio" src="../img/steve-folwell-lovespace.jpg"></img>
+                                        <img className="personaTestimonio" src={require("../img/steve-folwell-lovespace.jpg")}></img>
                                     </div>
                                     <p className="identity">Steve Folwell, CEO of LOVESPACE</p>
                                 </div>

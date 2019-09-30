@@ -17,7 +17,7 @@ class Article extends Component{
                         <li> 
                             <a href="/#" title="Message us">
                                 <div className="contact-icon">
-                                    <img src="../img/message.svg"></img>
+                                    <img src={require("../img/message.svg")}></img>
                                 </div>
                                 <h5>Message us</h5>
                             </a>
@@ -25,7 +25,7 @@ class Article extends Component{
                         <li> 
                             <a href="/#" title="hello@haio.design">
                                 <div className="contact-icon">
-                                    <img src="../img/mail.svg"></img>
+                                    <img src={require("../img/mail.svg")}></img>
                                 </div>
                                 <h5>hello@haio.design</h5>
                             </a>
@@ -33,7 +33,7 @@ class Article extends Component{
                         <li> 
                             <a href="http://maps.google.com/?q=35%20King%20Street,%20Bristol" title="35 King St, Bristol">
                                 <div className="contact-icon">
-                                    <img src="../img/location.svg"></img>
+                                    <img src={require("../img/location.svg")}></img>
                                 </div>
                                 <h5>35 King St, Bristol</h5>
                             </a>
@@ -41,7 +41,7 @@ class Article extends Component{
                         <li> 
                             <a href="/#" title="0117 251 0056">
                                 <div className="contact-icon">
-                                    <img src="../img/svg6.svg"></img>
+                                    <img src={require("../img/svg6.svg")}></img>
                                 </div>
                                 <h5>0117 251 0056</h5>
                             </a>

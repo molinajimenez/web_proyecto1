@@ -162,14 +162,14 @@ header nav.menu ul li a.contact:hover{
     color: white;
 }
 
-.svgTest{
-    background: url(../img/vectorpaint.svg);
-    background-size: cover;
-    background-position: center center;
-    width: 15%;
-    height: 75%;
+
+
+.logoHaioTop{
+    
     position: relative;
-    top: 20%;
-    left: 7%;
-    transform: scale(0.4);
+    width: 82px;
+    height: 28px;
+    margin-top: 45px;
+    margin-left: 45px; 
+
 }
