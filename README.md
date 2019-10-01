@@ -1,5 +1,5 @@
 # web_proyecto1 💻
-Entrega de proyecto 1 UVG - Tecnologías web
+Entrega de proyecto 1 UVG - Tecnologías web, pagina clon de: https://haio.design/
 
 # Instalacion
 • Si desea visualizar la versión de producción: 🏙
